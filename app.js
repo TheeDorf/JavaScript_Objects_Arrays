@@ -14,17 +14,49 @@ console.log(sum);
 
 
 // Exercise 2 Section
-console.log("EXERCISE 2:\n==========\n");
 
-let book = {};
-
-book.title= "The Outsiders"
-book.author = "S.E. Hinton"
-book.pages = 192
-book.readCount = 2
-
-book.info = function(){
-    return `${book.title} by ${book.author}, ${book.pages} pages, read ${book.readCount} times.`
+const book = {
+title: "The Outsiders",
+author: "SE Hinton",
+noOfPages:192,
+haveRead: true,
+readCount: 2,
+info: function(){
+   return ( 
+    `${this.title},
+    ${this.author},
+    ${this.noOfPages},
+    ${this.haveRead},
+    ${this.readCount}`)
+} 
 };
 
-console.log(book.info());
+
+book.info = function(){
+    console.log(`${this.title} by ${this.author}, ${this.noOfPages} pages, read ${this.readCount} times.`)
+    return `${this.title} by ${this.author}, ${this.noOfPages} pages, read ${this.readCount} times.`
+
+    
+}
+book.info()
+
+
+
+
+
+// //  ex 3
+
+let sentence = "The quick brown fox jumps over the lazy dog.";
+let arr1 = sentence.split(" ");
+
+for (let i = 0; i < arr1.length; i++) {
+    let sentence = arr1[i];
+    
+}
+
+console.log(arr1)
+
+
+
+
+
