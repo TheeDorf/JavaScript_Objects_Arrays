@@ -22,19 +22,15 @@ noOfPages:192,
 haveRead: true,
 readCount: 2,
 info: function(){
-   return ( 
-    `${this.title},
-    ${this.author},
-    ${this.noOfPages},
-    ${this.haveRead},
-    ${this.readCount}`)
+    return `${this.title} by ${this.author}, ${this.noOfPages} pages, read ${this.readCount} times.`
+   
 } 
 };
 
 
 book.info = function(){
     console.log(`${this.title} by ${this.author}, ${this.noOfPages} pages, read ${this.readCount} times.`)
-    return `${this.title} by ${this.author}, ${this.noOfPages} pages, read ${this.readCount} times.`
+    
 
     
 }
